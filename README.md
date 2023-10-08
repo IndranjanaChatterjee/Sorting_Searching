@@ -1,2 +1,2 @@
 # Sorting_Seraching
-Programs for soring and searching
+Programs for sorting and searching
