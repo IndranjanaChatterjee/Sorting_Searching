@@ -27,7 +27,7 @@ void merge(int a[],int low,int high,int mid)
 	k=low;
 	j=mid+1;
 	int b[100];
-	while(i<=mid && j<high)
+	while(i<=mid && j<=high)
 	{
 		if(a[i]<a[j])
 		{
@@ -51,14 +51,14 @@ void merge(int a[],int low,int high,int mid)
 			i++;
 		
 	}
-	while(j<high)
+	while(j<=high)
 	{
 		    b[k]=a[j];
 			k++;
 			j++;
 		
 	}
-	for(i=low;i<high;i++)
+	for(i=low;i<=high;i++)
 	{
 		a[i]=b[i];
 	}
@@ -76,7 +76,7 @@ int main()
 		scanf("%d",&a[i]);
 	}
 	print(a,n);
-	mergesort(a,0,n);
+	mergesort(a,0,n-1);
 	
 	printf("\nAfter sorting\n");
 	print(a,n);
